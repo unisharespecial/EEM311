@@ -1,0 +1,6 @@
+* source DENEY5
+M_M1         N00177 N00177 0 0 nnMOS           
+M_M5         N00372 N00177 0 0 nnMOS           
+R_R         N00319 N00177  1k  
+V_VCC1         N00319 0 5Vdc
+V_VCC2         N00372 0 5Vdc

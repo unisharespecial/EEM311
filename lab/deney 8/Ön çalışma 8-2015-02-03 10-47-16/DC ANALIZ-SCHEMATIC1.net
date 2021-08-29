@@ -1,0 +1,7 @@
+* source DC ANALIZ
+R_R1         N00224 N00274  8.2k  
+R_Rc         N00195 N00274  6.3k  
+R_R2         0 N00224  3.9k  
+R_RE         0 N03652  3.3k  
+Q_Q1         N00195 N00224 N03652 Q2N3904
+V_Vcc         N00274 0 12Vdc

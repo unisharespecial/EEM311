@@ -1,0 +1,14 @@
+* source ONCALISMA8
+R_R1         N00224 N00274  8.2k  
+R_Rc         N00195 N00274  6.3k  
+C_C3         N00195 N01531  10uF  
+R_R2         0 N00224  3.9k  
+R_RE         0 N00763  3.3k  
+C_C1         N01728 N00224  10uF  
+R_RL         0 N01531  3.9k  
+V_V2         N001471 0  
++SIN 0 10mV 1kHz 0 0 0
+R_Rs         N001471 N01728  3k  
+C_CE         0 N00763  10uF  
+Q_Q1         N00195 N00224 N00763 Q2N3904
+V_Vcc         N00274 0 12Vdc

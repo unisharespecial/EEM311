@@ -1,0 +1,6 @@
+* source ONCALISMA
+R_R1         N00243 N000030  1k  
+V_V1         N000030 0 5Vdc
+V_V2         N02904 0 5Vdc
+M_M1         N00243 N00243 0 0 nnMOS           
+M_M2         N02904 N00243 0 0 nnMOS           

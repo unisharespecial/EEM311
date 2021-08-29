@@ -1,0 +1,24 @@
+** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\MR.ERAY\Desktop\deney7\deney7-schematic1-deney7.sim ] 
+
+** Creating circuit file "deney7-schematic1-deney7.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Program Files\OrCAD_Demo\Capture\Library\Pspice\eval.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney6\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney5\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney4\jfet.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE 
+.INC "deney7-SCHEMATIC1.net" 
+
+.INC "deney7-SCHEMATIC1.als"
+
+
+.END

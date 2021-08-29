@@ -1,0 +1,191 @@
+
+**** 11/06/05 22:15:40 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney4"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney4-schematic1-dene
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney4-schematic1-deney4.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney4\jfet.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 10u 
+.PROBE 
+.INC "deney4-SCHEMATIC1.net" 
+
+
+**** INCLUDING deney4-SCHEMATIC1.net ****
+* source DENEY4
+R_RL         N00244 0  100k  
+C_C1         N00033 N00037  10u  
+C_C3         N00104 N00111  22u  
+C_C2         0 N00047  100u  
+C_C5         N00244 N00154  10u  
+C_C4         0 N00157  100u  
+R_Rg         0 N00037  1Meg  
+R_Rd         N00104 N00122  1k  
+R_R1         N00111 N00122  30k  
+R_R2         0 N00111  47k  
+R_Rs         0 N00047  330  
+R_Re         0 N00157  2.2k  
+Q_Q1         N00154 N00111 N00157 Q2N3904
+V_VCC         N00122 0 12v
+R_Rc         N00154 N00122  1k  
+J_J1         N00104 N00037 N00047 J2N4860 
+V_Vsin         N00033 0  
++SIN 0 0.1m 1k 0 0 0
+
+**** RESUMING deney4-schematic1-deney4.sim.cir ****
+.INC "deney4-SCHEMATIC1.als"
+
+
+
+**** INCLUDING deney4-SCHEMATIC1.als ****
+.ALIASES
+R_RL            RL(1=N00244 2=0 )
+C_C1            C1(1=N00033 2=N00037 )
+C_C3            C3(1=N00104 2=N00111 )
+C_C2            C2(1=0 2=N00047 )
+C_C5            C5(1=N00244 2=N00154 )
+C_C4            C4(1=0 2=N00157 )
+R_Rg            Rg(1=0 2=N00037 )
+R_Rd            Rd(1=N00104 2=N00122 )
+R_R1            R1(1=N00111 2=N00122 )
+R_R2            R2(1=0 2=N00111 )
+R_Rs            Rs(1=0 2=N00047 )
+R_Re            Re(1=0 2=N00157 )
+Q_Q1            Q1(c=N00154 b=N00111 e=N00157 )
+V_VCC           VCC(+=N00122 -=0 )
+R_Rc            Rc(1=N00154 2=N00122 )
+J_J1            J1(d=N00104 g=N00037 s=N00047 )
+V_Vsin          Vsin(+=N00033 -=0 )
+.ENDALIASES
+
+**** RESUMING deney4-schematic1-deney4.sim.cir ****
+.END
+
+**** 11/06/05 22:15:40 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney4"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney4-schematic1-dene
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/06/05 22:15:40 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney4"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney4-schematic1-dene
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N4860         
+               NJF             
+         VTO   -2.998        
+        BETA    6.313000E-03 
+      LAMBDA     .01         
+          IS  205.200000E-15 
+         ISR    1.988000E-12 
+       ALPHA   20.980000E-06 
+          VK  123.7          
+          RD    1            
+          RS    1            
+         CGD   15.920000E-12 
+         CGS   14.160000E-12 
+           M     .4069       
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF   84.470000E-18 
+
+
+**** 11/06/05 22:15:40 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney4"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney4-schematic1-dene
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00033)    0.0000 (N00037) 7.884E-06 (N00047)    2.0244 (N00104)    5.8653     
+
+(N00111)    6.9851 (N00122)   12.0000 (N00154)    9.1584 (N00157)    6.2923     
+
+(N00244)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -9.143E-03
+    V_Vsin       0.000E+00
+
+    TOTAL POWER DISSIPATION   1.10E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .36
+

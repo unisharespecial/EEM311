@@ -1,0 +1,145 @@
+
+**** 10/16/05 16:14:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney1"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\deney1-schemati
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney1-schematic1-deney1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10u 
+.PROBE 
+.INC "deney1-SCHEMATIC1.net" 
+
+
+**** INCLUDING deney1-SCHEMATIC1.net ****
+* source DENEY1
+R_R1         N00022 N00029  220k  
+R_R3         N00039 N00029  560  
+Q_Q1         N00039 N00022 N01111 BC238BP/ZTX 
+R_R2         N01108 N01111  33  
+R_R4         0 N01108  270  
+C_C3         N00429 N00022  10uf  
+R_R7         0 N00022  68k  
+C_C4         N00039 N00395  10uf  
+R_R6         0 N00395  3.3k  
+C_C1         0 N01108  100u  
+V_V3         N00429 0  
++SIN 0 50m 5k 0 0 0
+V_V1         N00029 0 15Vdc
+
+**** RESUMING deney1-schematic1-deney1.sim.cir ****
+.INC "deney1-SCHEMATIC1.als"
+
+
+
+**** INCLUDING deney1-SCHEMATIC1.als ****
+.ALIASES
+R_R1            R1(1=N00022 2=N00029 )
+R_R3            R3(1=N00039 2=N00029 )
+Q_Q1            Q1(C=N00039 B=N00022 E=N01111 )
+R_R2            R2(1=N01108 2=N01111 )
+R_R4            R4(1=0 2=N01108 )
+C_C3            C3(1=N00429 2=N00022 )
+R_R7            R7(1=0 2=N00022 )
+C_C4            C4(1=N00039 2=N00395 )
+R_R6            R6(1=0 2=N00395 )
+C_C1            C1(1=0 2=N01108 )
+V_V3            V3(+=N00429 -=0 )
+V_V1            V1(+=N00029 -=0 )
+.ENDALIASES
+
+**** RESUMING deney1-schematic1-deney1.sim.cir ****
+.END
+
+**** 10/16/05 16:14:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney1"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\deney1-schemati
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC238BP/ZTX     
+               NPN             
+          IS   18.000000E-15 
+          BF  400            
+          NF     .9955       
+         VAF   80            
+         IKF     .14         
+         ISE   50.000000E-15 
+          NE    1.46         
+          BR   35.5          
+          NR    1.005        
+         VAR   12.5          
+         IKR     .03         
+         ISC  172.000000E-15 
+          NC    1.27         
+          RB     .56         
+          RE     .6          
+          RC     .25         
+         CJE   13.000000E-12 
+         CJC    4.000000E-12 
+         VJC     .54         
+          TF  640.000000E-12 
+          TR   50.720000E-09 
+          CN    2.42         
+           D     .87         
+
+
+**** 10/16/05 16:14:47 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney1"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\deney1-schemati
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00022)    2.5635 (N00029)   15.0000 (N00039)   11.5430 (N00395)    0.0000     
+
+(N00429)    0.0000 (N01108)    1.6719 (N01111)    1.8763 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V1        -6.230E-03
+
+    TOTAL POWER DISSIPATION   9.35E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .14
+

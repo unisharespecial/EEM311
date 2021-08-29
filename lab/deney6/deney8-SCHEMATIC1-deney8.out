@@ -1,0 +1,148 @@
+
+**** 12/11/05 15:33:17 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney8"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney6\deney8-SCHEMATIC1-dene
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney8-SCHEMATIC1-deney8.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Program Files\OrCAD_Demo\Capture\Library\Pspice\eval.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney6\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney5\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney4\jfet.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 15m 0 10u 
+.PROBE 
+.INC "deney8-SCHEMATIC1.net" 
+
+
+**** INCLUDING deney8-SCHEMATIC1.net ****
+* source DENEY8
+R_R1         N00013 N00029  8.2k  
+R_R2         0 N00013  3.9k  
+R_RC         N00023 N00029  6.3k  
+R_RE         0 N00026  3.3k  
+Q_Q1         N00023 N00013 N00026 Q2N3904
+C_C1         N00081 N00013  10u  
+C_C2         N00023 N00111  10u  
+R_RS         N00960 N00081  3k  
+R_RL         0 N00111  3.9k  
+V_VCC         N00029 0 12Vdc
+V_V4         N00960 0  
++SIN 0 10m 1k 0 0 0
+
+**** RESUMING deney8-SCHEMATIC1-deney8.sim.cir ****
+.INC "deney8-SCHEMATIC1.als"
+
+
+
+**** INCLUDING deney8-SCHEMATIC1.als ****
+.ALIASES
+R_R1            R1(1=N00013 2=N00029 )
+R_R2            R2(1=0 2=N00013 )
+R_RC            RC(1=N00023 2=N00029 )
+R_RE            RE(1=0 2=N00026 )
+Q_Q1            Q1(c=N00023 b=N00013 e=N00026 )
+C_C1            C1(1=N00081 2=N00013 )
+C_C2            C2(1=N00023 2=N00111 )
+R_RS            RS(1=N00960 2=N00081 )
+R_RL            RL(1=0 2=N00111 )
+V_VCC           VCC(+=N00029 -=0 )
+V_V4            V4(+=N00960 -=0 )
+.ENDALIASES
+
+**** RESUMING deney8-SCHEMATIC1-deney8.sim.cir ****
+.END
+
+**** 12/11/05 15:33:17 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney8"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney6\deney8-SCHEMATIC1-dene
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/11/05 15:33:17 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney8"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney6\deney8-SCHEMATIC1-dene
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00013)    3.8491 (N00023)    5.9639 (N00026)    3.1851 (N00029)   12.0000     
+
+(N00081)    0.0000 (N00111)    0.0000 (N00960)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.952E-03
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.34E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .20
+

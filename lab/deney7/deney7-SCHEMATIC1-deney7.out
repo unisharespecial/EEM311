@@ -1,0 +1,152 @@
+
+**** 12/04/05 14:18:37 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\MR.ERAY\Desktop\deney7\deney7-schematic1-deney7.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney7-schematic1-deney7.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Program Files\OrCAD_Demo\Capture\Library\Pspice\eval.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney6\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney5\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney4\jfet.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE 
+.INC "deney7-SCHEMATIC1.net" 
+
+
+**** INCLUDING deney7-SCHEMATIC1.net ****
+* source DENEY7
+Q_Q1         N00025 0 N00028 Q2N3904
+Q_QA         N00094 N00094 N00120 Q2N3904
+Q_QB         N00081 N00094 N00124 Q2N3904
+R_Rc1         N00025 N00287  10k  
+R_Rc2         N00064 N00287  10k  
+R_RE1         N00081 N00028  250  
+R_RB         N00124 N00130  2.2k  
+R_RA         N00130 N00120  2.2k  
+R_RE2         N00081 N00071  250  
+V_VCC         N00287 0 15Vdc
+R_RREF         0 N00094  4.7k  
+Q_Q2         N00064 0 N00071 Q2N3904
+V_VEE         0 N00130 15Vdc
+
+**** RESUMING deney7-schematic1-deney7.sim.cir ****
+.INC "deney7-SCHEMATIC1.als"
+
+
+
+**** INCLUDING deney7-SCHEMATIC1.als ****
+.ALIASES
+Q_Q1            Q1(c=N00025 b=0 e=N00028 )
+Q_QA            QA(c=N00094 b=N00094 e=N00120 )
+Q_QB            QB(c=N00081 b=N00094 e=N00124 )
+R_Rc1           Rc1(1=N00025 2=N00287 )
+R_Rc2           Rc2(1=N00064 2=N00287 )
+R_RE1           RE1(1=N00081 2=N00028 )
+R_RB            RB(1=N00124 2=N00130 )
+R_RA            RA(1=N00130 2=N00120 )
+R_RE2           RE2(1=N00081 2=N00071 )
+V_VCC           VCC(+=N00287 -=0 )
+R_RREF          RREF(1=0 2=N00094 )
+Q_Q2            Q2(c=N00064 b=0 e=N00071 )
+V_VEE           VEE(+=0 -=N00130 )
+.ENDALIASES
+
+**** RESUMING deney7-schematic1-deney7.sim.cir ****
+.END
+
+**** 12/04/05 14:18:37 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\MR.ERAY\Desktop\deney7\deney7-schematic1-deney7.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/04/05 14:18:37 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\MR.ERAY\Desktop\deney7\deney7-schematic1-deney7.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00025)    4.8005 (N00028)    -.6647 (N00064)    4.8005 (N00071)    -.6647     
+
+(N00081)    -.9215 (N00094)   -9.7702 (N00120)  -10.4550 (N00124)  -10.4520     
+
+(N00130)  -15.0000 (N00287)   15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -2.040E-03
+    V_VEE       -4.133E-03
+
+    TOTAL POWER DISSIPATION   9.26E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

@@ -1,0 +1,107 @@
+
+**** 11/20/05 18:04:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney5"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney5-SCHEMATIC1-dene
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney5-SCHEMATIC1-deney5.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney5\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney4\jfet.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VCC2 0V 8V 0.5V 
+.PROBE 
+.INC "deney5-SCHEMATIC1.net" 
+
+
+**** INCLUDING deney5-SCHEMATIC1.net ****
+* source DENEY5
+M_M1         N00177 N00177 0 0 nnMOS           
+M_M5         N00372 N00177 0 0 nnMOS           
+R_R         N00319 N00177  1k  
+V_VCC1         N00319 0 5Vdc
+V_VCC2         N00372 0 5Vdc
+
+**** RESUMING deney5-SCHEMATIC1-deney5.sim.cir ****
+.INC "deney5-SCHEMATIC1.als"
+
+
+
+**** INCLUDING deney5-SCHEMATIC1.als ****
+.ALIASES
+M_M1            M1(d=N00177 g=N00177 s=0 s=0 )
+M_M5            M5(d=N00372 g=N00177 s=0 s=0 )
+R_R             R(1=N00319 2=N00177 )
+V_VCC1          VCC1(+=N00319 -=0 )
+V_VCC2          VCC2(+=N00372 -=0 )
+.ENDALIASES
+
+**** RESUMING deney5-SCHEMATIC1-deney5.sim.cir ****
+.END
+
+**** 11/20/05 18:04:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney5"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney5-SCHEMATIC1-dene
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nnMOS           
+               NMOS            
+       LEVEL    2            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    1.4          
+          KP  600.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    5.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

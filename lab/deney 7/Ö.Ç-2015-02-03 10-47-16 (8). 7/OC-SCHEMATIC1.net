@@ -1,0 +1,18 @@
+* source OC
+R_Rref         0 N00058  4.95k  
+R_Rc1         N02110 N00032  9.7k  
+R_Rc2         N03918 N00032  9.7k  
+R_Re1         N00042 N00035  250  
+R_Re2         N00045 N00042  250  
+R_RB         N01902 N00075  2.2k  
+R_RA         N02528 N00075  2.2k  
+Q_Q1         N02110 N00139 N00035 Q2N3904
+Q_Q2         N03918 N04566 N00045 Q2N3904
+Q_Qb         N00042 N00058 N01902 Q2N3904
+Q_Qa         N00058 N00058 N02528 Q2N3904
+V_Vin1         N00139 0  
++SIN 0 50mV 1kHz 0 0 0
+V_Vin2         N04566 0  
++SIN 0 -50mV 1kHz 0 0 0
+V_Vcc         N00032 0 15Vdc
+V_Vee         0 N00075 15Vdc

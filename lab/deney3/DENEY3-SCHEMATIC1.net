@@ -1,0 +1,11 @@
+* source DENEY3
+M_M1         N00052 N00024 N00063 N00063 nnMOS           
+C_Cg         N00297 N00024  1u  
+R_R1         N00024 N00040  120k  
+R_R2         0 N00024  100k  
+R_Rd         N00052 N00040  68k  
+R_Rs         0 N00063  68k  
+R_R3         N00300 N00297  100  
+V_V1         N00040 0 15Vdc
+V_V2         N00300 0  
++SIN 0 50m 1k 0 0 0

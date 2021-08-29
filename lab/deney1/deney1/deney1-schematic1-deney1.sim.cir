@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-deney1"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\deney1-schematic1-deney1.sim ] 
+
+** Creating circuit file "deney1-schematic1-deney1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10u 
+.PROBE 
+.INC "deney1-SCHEMATIC1.net" 
+
+.INC "deney1-SCHEMATIC1.als"
+
+
+.END

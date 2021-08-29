@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-transient simulation"  [ C:\Users\Bertan\Desktop\ö.ç 3\o.c-SCHEMATIC1-transient simulation.sim ] 
+
+** Creating circuit file "o.c-SCHEMATIC1-transient simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "nom.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "D:\DERSLER\5.YARIYIL\EEM 311 LAB\deney 3\deney3\cd4007.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms  0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\o.c-SCHEMATIC1.net" 
+
+
+.END

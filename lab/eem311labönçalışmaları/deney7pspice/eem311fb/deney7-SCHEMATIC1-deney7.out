@@ -1,0 +1,259 @@
+
+**** 12/01/08 20:02:09 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\Tolga Aydin\Desktop\eem311fb\deney7-schematic1-deney7.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney7-schematic1-deney7.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "C:\Documents and Settings\Tolga Aydin\Desktop\deney4\jfet.lib" 
+.lib "C:\Documents and Settings\Tolga Aydin\Desktop\deney6\cd4007.lib" 
+.lib "C:\Documents and Settings\Tolga Aydin\Desktop\deney1\EEM311.lib" 
+.lib "C:\Program Files\OrcadLite\Capture\Library\PSpice\diode.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\deney7-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING deney7-SCHEMATIC1.net ****
+* source DENEY7
+Q_Q1         N00025 0 N00028 Q2N3904
+Q_QA         N00094 N00094 N00120 Q2N3904
+Q_QB         N00081 N00094 N00124 Q2N3904
+R_Rc1         N00025 N00287  10k  
+R_Rc2         N00064 N00287  10k  
+R_RE1         N00081 N00028  250  
+R_RB         N00124 N00130  2.2k  
+R_RA         N00130 N00120  2.2k  
+R_RE2         N00081 N00071  250  
+V_VCC         N00287 0 15Vdc
+R_RREF         0 N00094  4.7k  
+Q_Q2         N00064 0 N00071 Q2N3904
+V_VEE         0 N00130 15Vdc
+
+**** RESUMING deney7-schematic1-deney7.sim.cir ****
+.END
+
+Unable to find index file jfet.ind for library file jfet.lib
+Making new index file jfet.ind for library file jfet.lib
+Index has 399 entries from 1 file(s).
++               Vtotc=-2.5m Is=205.2f Isr=1.988p N=1 Nr=2 Xti=3 Alpha=20.98u
++               Vk=123.7 Cgd=7.94p M=.4069 Pb=1 Fc=.5 Cgs=7.06p Kf=35.56E-18
++               Af=1)
+*               National        pid=51          case=TO92
+*               88-07-13 bam    BVmin=40
+*$
+.model U1898    NJF(Beta=5.108m Betatce=-.5 Rd=1 Rs=1 Lambda=13m Vto=-3
++               Vtotc=-2.5m Is=205.2f Isr=1.988p N=1 Nr=2 Xti=3 Alpha=20.98u
++               Vk=123.7 Cgd=7.94p M=.4069 Pb=1 Fc=.5 Cgs=7.06p Kf=67.93E-18
++               Af=1)
+*               National        pid=51          case=TO92
+*               88-07-13 bam    BVmin=40
+*$
+.model U1899    NJF(Beta=7.646m Betatce=-.5 Rd=1 Rs=1 Lambda=10m Vto=-2.131
++               Vtotc=-2.5m Is=205.2f Isr=1.988p N=1 Nr=2 Xti=3 Alpha=20.98u
++               Vk=123.7 Cgd=7.94p M=.4069 Pb=1 Fc=.5 Cgs=7.06p Kf=102.8E-18
++               Af=1)
+*               National        pid=51          case=TO92
+*               88-07-13 bam    BVmin=40
+*$
+*** end of library file
+
+Unable to find index file cd4007.ind for library file cd4007.lib
+Making new index file cd4007.ind for library file cd4007.lib
+Index has 2 entries from 1 file(s).
+.model nnMOS NMOS (LEVEL=2 VTo=1.4 Kp=.6m LAMBDA=0.005)
+.model ppMOS PMOS (LEVEL=2 VTo=-1.0 KP=.6m LAMBDA=0.01)
+
+
+
+
+Unable to find index file EEM311.ind for library file EEM311.lib
+Making new index file EEM311.ind for library file EEM311.lib
+Index has 5 entries from 1 file(s).
++ VAF=100
++ IKF=36.783E-3
++ ISE=114.82E-15
++ NE=1.4743
++ BR=.1001
++ VAR=100
++ IKR=10.010E-3
++ ISC=10.000E-15
++ RC=10
++ CJE=1.0260E-12
++ MJE=.33333
++ CJC=991.79E-15
++ MJC=.33333
++ TF=278.55E-12
++ XTF=91.905
++ VTF=18.899
++ ITF=.77631
++ TR=10.000E-9
+*
+*$
+*---------------------------------------------------------------------------
+*
+.MODEL BF245C/PLP NJF
++             VTO = -5.0014E+000
++            BETA = 5.43157E-004
++          LAMBDA = 2.71505E-002
++              RD = 1.20869E+001
++              RS = 1.20869E+001
++              IS = 3.64346E-016
++            CGS  = 2.00000E-012
++            CGD  = 2.00000E-012
++              PB = 1.24659E+000
++              FC = 5.00000E-001
+*
+*$
+
+*ZETEX  BC238BP Spice model     Last revision  4/90
+*
+.MODEL BC238BP/ZTX NPN IS =1.8E-14 ISE=5.0E-14 NF =.9955 NE =1.46 BF =400
++BR =35.5 IKF=.14 IKR=.03 ISC=1.72E-13 NC =1.27 NR =1.005 RB =.56 RE =.6
++RC =.25 VAF=80 VAR=12.5 CJE=13E-12 TF =.64E-9 CJC=4E-12 TR =50.72E-9
++VJC=.54 MJC=.33
+*$
+
+WARNING -- Library file "C:\Program Files\OrcadLite\Capture\Library\PSpice\diode.lib" has changed since index file diode.ind was created.
+WARNING -- The timestamp changed from Fri May 12 19:23:40 2000 to Fri May 12 18:23:40 2000.
+Making new index file diode.ind for library file diode.lib
+Index has 1171 entries from 1 file(s).
++ )
+*$
+*
+*
+* GENERIC FUNCTIONAL EQUIVALENT = UT4020
+* MANUFACTURER = UNITRODE
+* TYPE: DIODE
+* SUBTYPE: 200V RECTIFIER ZENER
+* THIS  IS A TEMPERATURE TRACKING MODEL WHICH WAS CONSTRUCTED
+* FROM PRODUCT SPECIFICATIONS LIMITS AND PREVIOUSLY EXTRACTED MODELS.  THE
+* MODEL IS INTENDED FOR USE FROM -55 C TO 125 C.  NO RADIATION EFFECTS ARE
+* INCLUDED.  SIMULATIONS USING THIS MODEL REPRESENT THE RESPONSES OF NOMINAL
+* DEVICES AND SIMULATIONS ARE ACCURATE WITHIN THE LIMITS OF THE PRODUCT
+* SPECIFICATION.
+*
+* THE FOLLOWING IS AN INDICATION OF SWITCHING TIME ACCURACY FOR THIS
+* MODEL:     MEASURED TRR = 3.809US           SIMULATED TRR = 3.8US
+*
+* RAD: PRE
+* TEMP= 27
+*
+.MODEL UT4020  D  (
++         IS = 1.978E-08
++         RS = 0.0214
++          N = 1.855
++         TT = 5.15E-6
++        CJO = 1.216E-10
++         VJ = 0.5288
++          M = 0.4425
++         EG = 1.132
++        XTI = 4.908
++         KF = 0
++         AF = 1
++         FC = 0.5
++         BV = 200
++        IBV = 0.001
++ )
+*$
+* end of library
+
+WARNING -- Library file "C:\Program Files\OrcadLite\Capture\Library\PSpice\nom.lib" has changed since index file nom.ind was created.
+WARNING -- The timestamp changed from Fri May 12 20:06:42 2000 to Fri May 12 19:06:42 2000.
+Making new index file nom.ind for library file nom.lib
+Index has 377 entries from 3 file(s).
+
+**** 12/01/08 20:02:09 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\Tolga Aydin\Desktop\eem311fb\deney7-schematic1-deney7.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/01/08 20:02:09 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-deney7"  [ C:\Documents and Settings\Tolga Aydin\Desktop\eem311fb\deney7-schematic1-deney7.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00025)    4.8005 (N00028)    -.6647 (N00064)    4.8005 (N00071)    -.6647     
+
+(N00081)    -.9215 (N00094)   -9.7702 (N00120)  -10.4550 (N00124)  -10.4520     
+
+(N00130)  -15.0000 (N00287)   15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -2.040E-03
+    V_VEE       -4.133E-03
+
+    TOTAL POWER DISSIPATION   9.26E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.31
+

@@ -1,0 +1,12 @@
+* source DENEY6
+M_Q1         N00160 N00154 0 0 nnMOS           
+M_Q3         N00009 N00009 N00032 N00032 ppmos           
+M_Q2         N00160 N00009 N00032 N00032 ppmos           
+V_VCC         N00032 0 15Vdc
+R_RG         N00154 N00160  1meg  
+V_Vin         N01669 0  
++SIN 0 25m 5k 0 0 0
+M_Q4         N00009 N00009 0 0 nnMOS           
+C_C1         N01669 N00154  10u  
+C_C2         N00160 N01644  10u  
+R_RL         0 N01644  100k  

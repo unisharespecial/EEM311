@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-time domain"  [ C:\Users\Bertan\Desktop\Ön çalýþma 8\oncalisma8-SCHEMATIC1-time domain.sim ] 
+
+** Creating circuit file "oncalisma8-SCHEMATIC1-time domain.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Windows\pspice.ini file:
+.lib "C:\Program Files\OrcadLite\Capture\Library\PSpice\eval.lib" 
+.lib "D:\DERSLER\5.YARIYIL\EEM 311 LAB Elektronik II\deney 4\deney4\jfet.lib" 
+.lib "D:\DERSLER\5.YARIYIL\EEM 311 LAB Elektronik II\deney 3\deney3\cd4007.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\oncalisma8-SCHEMATIC1.net" 
+
+
+.END

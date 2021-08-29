@@ -1,0 +1,53 @@
+(ExpressProject "part d"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\part d.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\part d-schematic1.net"
+      (Type "Report"))
+    (File ".\part d-schematic1.net"
+      (Type "Report"))
+    (File ".\part d-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\part d-schematic1-timedomain_d.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\part d-schematic1-timedomain_d.sim"
+        (DisplayName "SCHEMATIC1-timedomain_d")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -28 0 200 0 397"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -28 138 1234 138 571")
+        (Scroll "436 294")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\Users\Bertan\Desktop\Ön çalýþma 8\part d.dsn")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

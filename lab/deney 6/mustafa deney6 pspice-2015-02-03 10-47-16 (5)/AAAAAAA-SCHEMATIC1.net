@@ -1,0 +1,12 @@
+* source AAAAAAA
+M_Q2         N00525 N00195 N00226 N00226 ppmos           
+M_Q3         N00195 N00195 N00226 N00226 ppmos           
+V_Vcc         N00226 0 15Vdc
+R_RL         0 N06290  100k  
+V_V1         N06063 0  
++SIN 0 25mV 5kHz 0 0 0
+R_Rg         N00719 N00525  1MEG  
+M_Q1         N00525 N00719 0 0 nnMOS           
+M_Q4         N00195 N00195 0 0 nnMOS           
+C_C2         N00525 N06290  10uF  
+C_C1         N06063 N00719  10uF  

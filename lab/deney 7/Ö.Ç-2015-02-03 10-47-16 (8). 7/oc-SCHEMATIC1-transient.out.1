@@ -1,0 +1,133 @@
+
+**** 11/29/08 18:24:07 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Bertan\Desktop\.. 7\oc-SCHEMATIC1-transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "oc-SCHEMATIC1-transient.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Windows\pspice.ini file:
+.lib "C:\Program Files\OrcadLite\Capture\Library\PSpice\eval.lib" 
+.lib "D:\DERSLER\5.YARIYIL\EEM 311 LAB Elektronik II\deney 4\deney4\jfet.lib" 
+.lib "D:\DERSLER\5.YARIYIL\EEM 311 LAB Elektronik II\deney 3\deney3\cd4007.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\oc-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING oc-SCHEMATIC1.net ****
+* source OC
+R_Rref         0 N00058  4.95k  
+R_Rc1         N02110 N00032  9.7k  
+R_Rc2         N03918 N00032  9.7k  
+R_Re1         N00042 N00035  250  
+R_Re2         N00045 N00042  250  
+R_RB         N01902 N00075  2.2k  
+R_RA         N02528 N00075  2.2k  
+Q_Q1         N02110 N00139 N00035 Q2N3904
+Q_Q2         N03918 N04566 N00045 Q2N3904
+Q_Qb         N00042 N00058 N01902 Q2N3904
+Q_Qa         N00058 N00058 N02528 Q2N3904
+V_Vin1         N00139 0  
++SIN 0 50mV 1kHz 0 0 0
+V_Vin2         N04566 0  
++SIN 0 -50mV 1kHz 0 0 0
+V_Vcc         N00032 0 15Vdc
+V_Vee         0 N00075 15Vdc
+
+**** RESUMING oc-SCHEMATIC1-transient.sim.cir ****
+.END
+
+**** 11/29/08 18:24:07 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Bertan\Desktop\.. 7\oc-SCHEMATIC1-transient.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/29/08 18:24:07 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Bertan\Desktop\.. 7\oc-SCHEMATIC1-transient.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00032)   15.0000 (N00035)    -.6635 (N00042)    -.9113 (N00045)    -.6635     
+
+(N00058)   -9.9301 (N00075)  -15.0000 (N00139)    0.0000 (N01902)  -10.6110     
+
+(N02110)    5.4521 (N02528)  -10.6140 (N03918)    5.4521 (N04566)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin1      -6.980E-06
+    V_Vin2      -6.980E-06
+    V_Vcc       -1.969E-03
+    V_Vee       -3.989E-03
+
+    TOTAL POWER DISSIPATION   8.94E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

@@ -1,0 +1,145 @@
+
+**** 11/06/05 01:21:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney3"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney3-schematic1-dene
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "deney3-schematic1-deney3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\cd4007.lib" 
+.lib "C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney1\deney1\EEM311.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 15ms 0 10us 
+.PROBE 
+.INC "deney3-SCHEMATIC1.net" 
+
+
+**** INCLUDING deney3-SCHEMATIC1.net ****
+* source DENEY3
+M_M1         N00052 N00024 N00063 N00063 nnMOS           
+C_Cg         N00297 N00024  1u  
+R_R1         N00024 N00040  120k  
+R_R2         0 N00024  100k  
+R_Rd         N00052 N00040  68k  
+R_Rs         0 N00063  68k  
+R_R3         N00300 N00297  100  
+V_V1         N00040 0 15Vdc
+V_V2         N00300 0  
++SIN 0 50m 1k 0 0 0
+
+**** RESUMING deney3-schematic1-deney3.sim.cir ****
+.INC "deney3-SCHEMATIC1.als"
+
+
+
+**** INCLUDING deney3-SCHEMATIC1.als ****
+.ALIASES
+M_M1            M1(d=N00052 g=N00024 s=N00063 s=N00063 )
+C_Cg            Cg(1=N00297 2=N00024 )
+R_R1            R1(1=N00024 2=N00040 )
+R_R2            R2(1=0 2=N00024 )
+R_Rd            Rd(1=N00052 2=N00040 )
+R_Rs            Rs(1=0 2=N00063 )
+R_R3            R3(1=N00300 2=N00297 )
+V_V1            V1(+=N00040 -=0 )
+V_V2            V2(+=N00300 -=0 )
+.ENDALIASES
+
+**** RESUMING deney3-schematic1-deney3.sim.cir ****
+.END
+
+**** 11/06/05 01:21:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney3"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney3-schematic1-dene
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nnMOS           
+               NMOS            
+       LEVEL    2            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    1.4          
+          KP  600.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    5.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 11/06/05 01:21:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-deney3"  [ C:\Documents and Settings\MR.ERAY\Desktop\EEM311- ELEKTRONIK 2\LABS\deney3\deney3-schematic1-dene
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00024)    6.8182 (N00040)   15.0000 (N00052)   10.0670 (N00063)    4.9328     
+
+(N00297)    0.0000 (N00300)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.407E-04
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.11E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .23
+
